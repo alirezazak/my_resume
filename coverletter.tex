@@ -27,6 +27,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+\usepackage{pdfpages}
 
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
  
@@ -129,5 +130,10 @@ English texts for beginners to practice reading and comprehension online and for
 %----------------------------------------------------------------------------------------
 
 \makeletterclosing % Print the signature and enclosures
+
+%----------------------------------------------------------------------------------------
+\newpage % Force a new page for looks
+\includepdf[pages=-]{cv-sections/Sony.pdf}
+\includepdf[pages=-]{cv-sections/carux.pdf}
 
 \end{document}
